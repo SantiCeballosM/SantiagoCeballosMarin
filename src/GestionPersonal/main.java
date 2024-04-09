@@ -20,7 +20,7 @@ public class main {
             System.out.println();
             System.out.println("Ingresa la opcion que desees hacer: ");
             System.out.println();
-            opcion = scanner.nextInt();
+            opcion = scanner. nextInt();
 
             switch (opcion) {
                 case 1:
@@ -57,7 +57,7 @@ public class main {
                     break;
 
                 case 3:
-                    gestionPersonal.generarReporte();
+                    gestionPersonal.generarReporteDepartamentos();
                     break;
 
                 case 4:

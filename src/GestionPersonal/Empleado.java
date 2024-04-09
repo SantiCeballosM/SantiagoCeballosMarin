@@ -68,25 +68,5 @@ public class Empleado {
     }
 
 
-    /*
-    public static void main(String[] args) {
-        List<String> empleados = new ArrayList<>();
-        Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Ingrese los nombres de los empleados (escriba 'fin' para terminar):");
-
-        String nombreEmpleado = scanner.nextLine();
-        while (!nombreEmpleado.equalsIgnoreCase("fin")) {
-            empleados.add(nombreEmpleado);
-            nombreEmpleado = scanner.nextLine();
-        }
-
-        System.out.println("Listado de empleados:");
-        for (String empleado : empleados) {
-            System.out.println(empleado);
-        }
-
-        scanner.close();
-    }
-    */
 }

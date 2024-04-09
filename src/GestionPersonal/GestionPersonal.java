@@ -1,10 +1,27 @@
 package GestionPersonal;
 import java.util.ArrayList;
-public class GestionPersonal {
-    private static ArrayList<Empleado> empleados;
+import java.util.ArrayList;
 
+public class GestionPersonal {
+    private ArrayList<Departamento> departamentos;
+    private ArrayList<Empleado> empleados;
+
+    // Constructor
     public GestionPersonal() {
+        this.departamentos = new ArrayList<>();
         this.empleados = new ArrayList<>();
+    }
+
+    public void agregarDepartamento(Departamento departamento) {
+        departamentos.add(departamento);
+    }
+
+    public void agregarEmpleadoADepartamento(Empleado empleado, Departamento departamento) {
+        departamento.agregarEmpleado(empleado);
+    }
+
+    public void mostrarEmpleadosDepartamento(Departamento departamento) {
+        departamento.mostrarEmpleados();
     }
 
     public void agregarEmpleado(Empleado empleado) {
@@ -20,8 +37,14 @@ public class GestionPersonal {
         return -1;
     }
 
-    public void generarReporte() {
-
+    public void generarReporteDepartamentos() {
+        System.out.println("Reporte de Productividad por Departamento:");
+        for (Departamento departamento : departamentos) {
+            System.out.println("Departamento: " + departamento.getNombre());
+            System.out.println("Empleados:");
+            departamento.mostrarEmpleados();
+            System.out.println("-------------------------------------------");
+        }
     }
 
     public void mostrarEstructuraJerarquica() {
