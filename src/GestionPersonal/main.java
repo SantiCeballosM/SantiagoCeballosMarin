@@ -102,7 +102,7 @@ public class main {
                     break;
 
                 case 3:
-                    mantenimiento.mostrarEmpleados();
+                    gestionPersonal.generarInformeProductividad();
 
                     break;
 
@@ -126,22 +126,5 @@ public class main {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

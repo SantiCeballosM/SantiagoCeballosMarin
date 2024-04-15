@@ -44,4 +44,12 @@ public class Departamento {
                     ", Salario: " + empleado.getSalario());
         }
     }
+    public double calcularProductividad() {
+        double productividad = 0.0;
+        for (Empleado empleado : empleados) {
+            // Sumar todos los salarios de los empleados en este departamento
+            productividad += empleado.getSalario();
+        }
+        return productividad;
+    }
 }

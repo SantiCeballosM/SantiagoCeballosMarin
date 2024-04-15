@@ -31,7 +31,22 @@ public class GestionPersonal {
 
 
     public void mostrarEstructuraJerarquica() {
+        Departamento mantenimiento = new Departamento("Mantenimiento");
+        Departamento administracion = new Departamento("Administración");
+        Departamento contabilidad = new Departamento("Contabilidad");
+        Departamento recursosHumanos = new Departamento("Recursos Humanos");
+        Departamento ventasMarketing = new Departamento("Ventas y Marketing");
+        Departamento produccionOperaciones = new Departamento("Producción o Operaciones");
+        Departamento tecnologiaInformacion = new Departamento("Tecnología de la Información (TI)");
 
 
+    }
+    public void generarInformeProductividad() {
+        System.out.println("Informe de Productividad por Departamento:");
+        for (Departamento departamento : departamentos) {
+            System.out.println("Departamento: " + departamento.getNombre());
+            System.out.println("Productividad: $" + departamento.calcularProductividad());
+            System.out.println("-------------------------------------------");
+        }
     }
 }
