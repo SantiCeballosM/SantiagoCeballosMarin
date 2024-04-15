@@ -4,6 +4,14 @@ public class main {
     public static void main (String[] args) {
         Scanner scanner = new Scanner(System.in);
         GestionPersonal gestionPersonal = new GestionPersonal();
+        Departamento mantenimiento = new Departamento("Mantenimiento");
+        Departamento administracion = new Departamento("Administración");
+        Departamento contabilidad = new Departamento("Contabilidad");
+        Departamento recursosHumanos = new Departamento("Recursos Humanos");
+        Departamento ventasMarketing = new Departamento("Ventas y Marketing");
+        Departamento produccionOperaciones = new Departamento("Producción o Operaciones");
+        Departamento tecnologiaInformacion = new Departamento("Tecnología de la Información (TI)");
+
         int opcion;
         do {
             System.out.println();
@@ -38,9 +46,46 @@ public class main {
                     double salario = scanner.nextDouble();
                     scanner.nextLine();
                     System.out.print("Departamento: ");
-                    String departamento = scanner.nextLine();
+                    System.out.println();
+                    System.out.println("Elige a que departamento deseas agregar el empleado: ");
+                    System.out.println("1- Mantenimiento");
+                    System.out.println("2- Administración");
+                    System.out.println("3- Contabilidad");
+                    System.out.println("4- Recursos Humanos");
+                    System.out.println("5- Ventas y Marketing");
+                    System.out.println("6- Producción o Operaciones");
+                    System.out.println("7- Tecnología de la Información (TI)");
+                    System.out.println("Ingrese la opcion: ");
+                    int opcionDepartamento = scanner.nextInt();
+                    Departamento departamento = null;
+                    switch (opcionDepartamento) {
+                        case 1:
+                            departamento = mantenimiento;
+                            break;
+                        case 2:
+                            departamento = administracion;
+                            break;
+                        case 3:
+                            departamento = contabilidad;
+                            break;
+                        case 4:
+                            departamento = recursosHumanos;
+                            break;
+                        case 5:
+                            departamento = ventasMarketing;
+                            break;
+                        case 6:
+                            departamento = produccionOperaciones;
+                            break;
+                        case 7:
+                            departamento = tecnologiaInformacion;
+                            break;
+                        default:
+                            System.out.println("Ups hiciste algo mal");
+                    }
 
-                    Empleado nuevoEmpleado = new Empleado(id, nombre, apellido, cargo, salario, departamento);
+                    Empleado nuevoEmpleado = new Empleado(id, nombre, apellido, cargo, salario, departamento.getNombre());
+                    departamento.agregarEmpleado(nuevoEmpleado);
                     gestionPersonal.agregarEmpleado(nuevoEmpleado);
                     System.out.println("Empleado agregado con éxito.");
                     break;
@@ -57,7 +102,8 @@ public class main {
                     break;
 
                 case 3:
-                    gestionPersonal.generarReporteDepartamentos();
+                    mantenimiento.mostrarEmpleados();
+
                     break;
 
                 case 4:
@@ -80,4 +126,22 @@ public class main {
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

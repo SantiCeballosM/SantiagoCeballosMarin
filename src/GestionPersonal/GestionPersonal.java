@@ -12,19 +12,10 @@ public class GestionPersonal {
         this.empleados = new ArrayList<>();
     }
 
-    public void agregarDepartamento(Departamento departamento) {
-        departamentos.add(departamento);
-    }
 
-    public void agregarEmpleadoADepartamento(Empleado empleado, Departamento departamento) {
-        departamento.agregarEmpleado(empleado);
-    }
-
-    public void mostrarEmpleadosDepartamento(Departamento departamento) {
-        departamento.mostrarEmpleados();
-    }
 
     public void agregarEmpleado(Empleado empleado) {
+
         empleados.add(empleado);
     }
 
@@ -37,17 +28,10 @@ public class GestionPersonal {
         return -1;
     }
 
-    public void generarReporteDepartamentos() {
-        System.out.println("Reporte de Productividad por Departamento:");
-        for (Departamento departamento : departamentos) {
-            System.out.println("Departamento: " + departamento.getNombre());
-            System.out.println("Empleados:");
-            departamento.mostrarEmpleados();
-            System.out.println("-------------------------------------------");
-        }
-    }
+
 
     public void mostrarEstructuraJerarquica() {
+
 
     }
 }
