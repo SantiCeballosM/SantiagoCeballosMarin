@@ -38,8 +38,6 @@ public class GestionPersonal {
         Departamento ventasMarketing = new Departamento("Ventas y Marketing");
         Departamento produccionOperaciones = new Departamento("Producción o Operaciones");
         Departamento tecnologiaInformacion = new Departamento("Tecnología de la Información (TI)");
-
-
     }
     public void generarInformeProductividad() {
         System.out.println("Informe de Productividad por Departamento:");

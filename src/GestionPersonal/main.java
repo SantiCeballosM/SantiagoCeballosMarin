@@ -40,11 +40,12 @@ public class main {
                     String nombre = scanner.nextLine();
                     System.out.print("Apellido: ");
                     String apellido = scanner.nextLine();
-                    System.out.print("Cargo: ");
-                    String cargo = scanner.nextLine();
                     System.out.print("Salario: ");
                     double salario = scanner.nextDouble();
                     scanner.nextLine();
+                    System.out.println("Cargo: ");
+                    String cargo = scanner.nextLine();
+                    System.out.println();
                     System.out.print("Departamento: ");
                     System.out.println();
                     System.out.println("Elige a que departamento deseas agregar el empleado: ");
@@ -102,15 +103,65 @@ public class main {
                     break;
 
                 case 3:
-                    gestionPersonal.generarInformeProductividad();
-
+                    try {
+                        mantenimiento.calcularProductividad();
+                        administracion.calcularProductividad();
+                        contabilidad.calcularProductividad();
+                        recursosHumanos.calcularProductividad();
+                        ventasMarketing.calcularProductividad();
+                        produccionOperaciones.calcularProductividad();
+                        tecnologiaInformacion.calcularProductividad();
+                    } catch (Exception e) {
+                        System.err.println("Ha ocurrido un error: " + e.getMessage());
+                        e.printStackTrace();
+                    }
                     break;
 
                 case 4:
-                    gestionPersonal.mostrarEstructuraJerarquica();
+                    mantenimiento.mostrarEmpleados();
+                    administracion.mostrarEmpleados();
+                    contabilidad.mostrarEmpleados();
+                    recursosHumanos.mostrarEmpleados();
+                    ventasMarketing.mostrarEmpleados();
+                    produccionOperaciones.mostrarEmpleados();
+                    tecnologiaInformacion.mostrarEmpleados();
+
                     break;
 
                 case 5:
+                    System.out.println("Mantenimiento");
+                    System.out.println("Reporte de productividad: " + mantenimiento.calcularProductividad());
+                    System.out.printf("Empleados en el area: ");
+                    mantenimiento.mostrarEmpleados();
+                    System.out.println("---------------------------------------");
+                    System.out.println("Administración");
+                    System.out.println("Reporte de productividad: " + administracion.calcularProductividad());
+                    System.out.printf("Empleados en el area: ");
+                    administracion.mostrarEmpleados();
+                    System.out.println("---------------------------------------");
+                    System.out.println("Contabilidad");
+                    System.out.println("Reporte de productividad: " + contabilidad.calcularProductividad());
+                    System.out.printf("Empleados en el area: ");
+                    contabilidad.mostrarEmpleados();
+                    System.out.println("---------------------------------------");
+                    System.out.println("Recursos Humanos");
+                    System.out.println("Reporte de productividad: " + recursosHumanos.calcularProductividad());
+                    System.out.printf("Empleados en el area: ");
+                    recursosHumanos.mostrarEmpleados();
+                    System.out.println("---------------------------------------");
+                    System.out.println("Ventas y Marketing");
+                    System.out.println("Reporte de productividad: " + ventasMarketing.calcularProductividad());
+                    System.out.printf("Empleados en el area: ");
+                    ventasMarketing.mostrarEmpleados();
+                    System.out.println("Producción o Operaciones");
+                    System.out.println("Reporte de productividad: " + produccionOperaciones.calcularProductividad());
+                    System.out.printf("Empleados en el area: ");
+                    produccionOperaciones.mostrarEmpleados();
+                    System.out.println("---------------------------------------");
+                    System.out.println("Tecnología de la Información (TI)");
+                    System.out.println("Reporte de productividad: " + tecnologiaInformacion.calcularProductividad());
+                    System.out.printf("Empleados en el area: ");
+                    tecnologiaInformacion.mostrarEmpleados();
 
                     break;
 

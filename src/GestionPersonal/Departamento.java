@@ -43,6 +43,7 @@ public class Departamento {
                     ", Cargo: " + empleado.getCargo() +
                     ", Salario: " + empleado.getSalario());
         }
+
     }
     public double calcularProductividad() {
         double productividad = 0.0;
@@ -50,6 +51,7 @@ public class Departamento {
             // Sumar todos los salarios de los empleados en este departamento
             productividad += empleado.getSalario();
         }
+        System.out.println("La productividad calcula del area de" + nombre + "es: " + productividad);
         return productividad;
     }
 }
