@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ddecb8e3-5c9d-4c5e-90f9-a5d5213a87a3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/SantiagoCeballosMarin-y-JhonHaroldRamirez.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
@@ -66,7 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1713241383237</updated>
       <workItem from="1713241384511" duration="661000" />
-      <workItem from="1713324408613" duration="345000" />
+      <workItem from="1713324408613" duration="698000" />
     </task>
     <servers />
   </component>
