@@ -43,9 +43,8 @@ public class main {
                     System.out.print("Salario: ");
                     double salario = scanner.nextDouble();
                     scanner.nextLine();
-                    System.out.println("Cargo: ");
+                    System.out.print("Cargo: ");
                     String cargo = scanner.nextLine();
-                    System.out.println();
                     System.out.print("Departamento: ");
                     System.out.println();
                     System.out.println("Elige a que departamento deseas agregar el empleado: ");
@@ -163,7 +162,6 @@ public class main {
                     System.out.println("Reporte de productividad: " + tecnologiaInformacion.calcularProductividad());
                     System.out.printf("Empleados en el area: ");
                     tecnologiaInformacion.mostrarEmpleados();
-
                     break;
 
                 case 6:

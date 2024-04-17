@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ddecb8e3-5c9d-4c5e-90f9-a5d5213a87a3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SantiagoCeballosMarin-y-JhonHaroldRamirez.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GestionPersonal/Departamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GestionPersonal/Departamento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GestionPersonal/GestionPersonal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GestionPersonal/GestionPersonal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GestionPersonal/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GestionPersonal/main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +34,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "Merging master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/cebal/Desktop/Nueva carpeta (2)/SantiagoCeballosMarin-y-JhonHaroldRamirez",
     "node.js.detected.package.eslint": "true",
@@ -67,7 +61,7 @@
       <option name="presentableId" value="Default" />
       <updated>1713241383237</updated>
       <workItem from="1713241384511" duration="661000" />
-      <workItem from="1713324408613" duration="698000" />
+      <workItem from="1713324408613" duration="1354000" />
     </task>
     <servers />
   </component>

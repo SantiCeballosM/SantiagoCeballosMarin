@@ -53,6 +53,7 @@ public class Departamento {
             productividad += empleado.getSalario();
         }
         System.out.println("La productividad calcula del area de " + nombre + " es: " + productividad);
+
         return productividad;
     }
 }
