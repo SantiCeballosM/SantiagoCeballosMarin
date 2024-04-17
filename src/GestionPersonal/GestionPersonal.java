@@ -28,7 +28,14 @@ public class GestionPersonal {
         return -1;
     }
 
-
+    public boolean existeEmpleadoConID(int id) {
+        for (Empleado empleado : empleados) {
+            if (empleado.getId() == id) {
+                return true;
+            }
+        }
+        return false;
+    }
 
     public void mostrarEstructuraJerarquica() {
         Departamento mantenimiento = new Departamento("Mantenimiento");

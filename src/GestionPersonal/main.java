@@ -33,9 +33,14 @@ public class main {
             switch (opcion) {
                 case 1:
                     System.out.println("Ingrese los detalles del nuevo empleado:");
+
                     System.out.print("ID: ");
                     int id = scanner.nextInt();
                     scanner.nextLine();
+                    if (gestionPersonal.existeEmpleadoConID(id)) {
+                        System.out.println("El ID ingresado ya existe. Por favor, ingrese un ID único.");
+                        break;
+                    }
                     System.out.print("Nombre: ");
                     String nombre = scanner.nextLine();
                     System.out.print("Apellido: ");
