@@ -2,7 +2,6 @@ package GestionPersonal;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class Departamento {
     private String nombre;
     private List<Empleado> empleados;
@@ -27,11 +26,11 @@ public class Departamento {
     }
 
     public void setEmpleados(List<Empleado> empleados) {
+
         this.empleados = empleados;
     }
 
     public void agregarEmpleado(Empleado empleado) {
-
         empleados.add(empleado);
     }
 
@@ -44,16 +43,23 @@ public class Departamento {
                     ", Cargo: " + empleado.getCargo() +
                     ", Salario: " + empleado.getSalario());
         }
+        System.out.println("-------------------------------------------------------------------------");
 
     }
     public double calcularProductividad() {
         double productividad = 0.0;
         for (Empleado empleado : empleados) {
-            // Sumar todos los salarios de los empleados en este departamento
             productividad += empleado.getSalario();
         }
-        System.out.println("La productividad calcula del area de " + nombre + " es: " + productividad);
-
+        System.out.println("La productividad calculada del area de " + nombre + " es: " + productividad);
         return productividad;
     }
+    public String calcularProductividadAvanzada() {
+        double productividad = 0.0;
+        for (Empleado empleado : empleados) {
+            productividad += empleado.getSalario();
+        }
+        return ("La productividad calculada del area de " + nombre + " es: " + productividad);
+    }
+
 }
